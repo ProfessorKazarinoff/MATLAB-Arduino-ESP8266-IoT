@@ -18,5 +18,5 @@ No admin access on PC, can’t install drivers or software
 - Arduino - Upload code, push sensor readings to ThingSpeak
 - PC - view sensor data on ThingSpeak
 
-## License
+## License:
 GNU GENERAL PUBLIC LICENSE, Version 3
