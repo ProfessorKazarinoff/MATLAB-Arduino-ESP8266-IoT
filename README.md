@@ -14,6 +14,8 @@ No admin access on PC, can’t install drivers or software
 - Arduino - Upload Code, test photo cell
 - Arduino - ESP8266 soft serial test to PC
 - Arduino - Upload Code, test software serial to ESP8266
+   consider changing soft serial baud rate to 4800 and ESP8266 baud rate to 4800 and increasing software serial cache size
+   mySerial swSerial(4800,false,256)?
 - ThingSpeak - set up channel
 - Arduino - Upload code, push sensor readings to ThingSpeak
 - PC - view sensor data on ThingSpeak
