@@ -39,6 +39,7 @@ Summary:
  
 3. ESP8266 set baud rate 9600 and test:
     Change ESP8266 Serial baud rate - AT+UART_DEF(9600,0,0,1) 
+    Connect ESP8266 RX-TX, TX-RX, RST-3.3V CHMD-3.3V GND-GND VCC-3.3V
     Serial Monitor: 9600 Baud, Both RL / NL
     Test: AT —> Ready AT-RST, AT-GMR
     Test ESP8266 can log onto network
@@ -47,6 +48,8 @@ Summary:
     AT+CMR=‘netID’ ‘password’ (WiFi connect)
     AT + CMR = disconnect
     AT + RST
+    AT
+    
  
 4. Arduino: Upload code test photocell
     Connect Arduino and Photocell, LED
