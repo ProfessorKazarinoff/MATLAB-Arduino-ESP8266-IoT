@@ -28,7 +28,7 @@ Summary:
 | Voltage regulator | Content Cell  |
 | M/M Jumper Wires  | ![M/M 6" Jumper wires at Sparkfun](https://www.sparkfun.com/products/8431)  |
 | Breadboard  | Content Cell  |
-| Micro USB Cable  | ![Mini-B to A USB at Sparkfun](https://www.sparkfun.com/products/11301?_ga=2.114882823.1619575078.1498623788-1288264142.1469139950)  |
+| Mini-B USB Cable  | ![Mini-B to A USB cable at Sparkfun](https://www.sparkfun.com/products/11301?_ga=2.114882823.1619575078.1498623788-1288264142.1469139950)  |
     
     Fritzing Diagram
     Connection Chart
