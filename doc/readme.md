@@ -25,8 +25,12 @@ Summary:
  
 2. ESP8266 refresh and test:
     Asseble PC --> Arduino --> Logic Level Converter --> ESP8266
+    A couple notes: The pin labeled RX on the Arduino connects to RX on the ESP8266 (Arduino labeling corresponds to what to connect the pin to, not what the pin is in this case)
+    The Arduino serial runs at 5V and this can damage the 3.3V ESP8266, so a logic converter is used to step down the voltage. A common ground must also be connected to the logic converter.
+    The Reset pin on the Arduino needs to be grounded to put the Arduino is the mode where it just reads serial communcation and does not run or accept code.
     
     ![Alt Name](/doc/Redboard_ESP8266_passthru_serial_bb.png)
+    
     
     Plug in ESP 8266 with USB cable
     open Arduin0 Serial monitor: 11520 baud, Both RL / TL
@@ -70,7 +74,11 @@ Summary:
     
  
 6. Arduino Software Serial to ESP8266 Test:
+
     Connect Arduino - logicconverter- ESP8266
+    
+    ![Alt Name](/doc/Redboard_ESP8266_software_serial_bb.png)
+    
     Upload Sketch
     Test Arduino - ESP8266 software serial
     AT, AT+RST,AT+GMR
