@@ -25,7 +25,9 @@ Summary:
  
 2. ESP8266 refresh and test:
     Asseble PC --> Arduino --> Logic Level Converter --> ESP8266
-    ![Testing Setup]('Redboard_ESP8266_passthru_serial_bb.png' "Serial Pass Thru Setup")
+    
+    ![Testing Setup]('/doc/Redboard_ESP8266_passthru_serial_bb.png' "Serial Pass Thru Setup")
+    
     Plug in ESP 8266 with USB cable
     open Arduin0 Serial monitor: 11520 baud, Both RL / TL
     AT —> ready
