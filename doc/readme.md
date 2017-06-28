@@ -24,7 +24,7 @@ Summary:
 | ------------- | ------------- |
 | Arduino - Sparkfun Redboard  |![Redboard at Sparkfun](https://www.sparkfun.com/products/13975?_ga=2.75723669.1619575078.1498623788-1288264142.1469139950) |
 | ESP8266  | ![ESP8266 on Amazon](https://www.amazon.com/gp/product/B01MT6T73L/ref=oh_aui_detailpage_o00_s00?ie=UTF8&psc=1)  |
-| Bi-directional logic converter  | Content Cell  |
+| Bi-directional logic converter  | ![Logic Converter on Amazon](https://www.amazon.com/gp/product/B014MC1OAG/ref=oh_aui_detailpage_o01_s00?ie=UTF8&psc=1)  |
 | Voltage regulator | Content Cell  |
 | M/M Jumper Wires  | Content Cell  |
 | Breadboard  | Content Cell  |
