@@ -29,7 +29,7 @@ Summary:
     The Arduino serial runs at 5V and this can damage the 3.3V ESP8266, so a logic converter is used to step down the voltage. A common ground must also be connected to the logic converter.
     The Reset pin on the Arduino needs to be grounded to put the Arduino is the mode where it just reads serial communcation and does not run or accept code.
     
-    ![Alt Name](/doc/Redboard_ESP8266_passthru_serial_bb.png)
+    ![Alt Name](/doc/Redboard_ESP8266_passthru_serial.png)
     
     
     Plug in ESP 8266 with USB cable
