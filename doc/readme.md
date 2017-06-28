@@ -19,6 +19,17 @@ Summary:
  
 1. Assemble Hardware:
     Bill of Materials
+    
+| Component     | URL           |
+| ------------- | ------------- |
+| Arduino - Sparkfun Redboard  | Content Cell  |
+| ESP8266  | Content Cell  |
+| Bi-directional logic converter  | Content Cell  |
+| Voltage regulator | Content Cell  |
+| M/M Jumper Wires  | Content Cell  |
+| Breadboard  | Content Cell  |
+| Micro USB Cable  | Content Cell  |
+    
     Fritzing Diagram
     Connection Chart
     Picture
