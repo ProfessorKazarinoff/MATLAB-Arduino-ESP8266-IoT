@@ -1,11 +1,11 @@
 # MATLAB-Arduino-ESP8266-IoT
-A student project for ENGR114 at Portland Community College. Uses MATLAB connected to an Arudino over serial to control an ESP8266 over serial that can connect over WiFi to an IoT server 
+A student project for ENGR114 at Portland Community College. Uses MATLAB connected to an Arudino over serial to control an ESP8266 over serial that can connect over WiFi to an IoT server.
 
 ## Problem Statement: 
-Upload light sensor data wirelessly using an Arduino and ESP8266
+Wirelessly upload light sensor data using an Arduino connected to an ESP8266 over serial.
  
 ### Assumptions: 
-No admin access on PC, can’t install drivers or software
+No admin access on PC's, students can’t install drivers or new software.
  
 ## Summary:
 - Assemble Hardware
