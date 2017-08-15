@@ -93,9 +93,14 @@ Summary:
     
     Upload Sketch
     Test Arduino - ESP8266 software serial
-    AT, AT+RST,AT+GMR
-    AT+CMR?, AT+CMR3, AT+CMR=‘netID’ ‘password’
- 
+ ```
+    >> AT
+    >> AT+RST
+    >> AT+GMR
+    >> AT+CMR?
+    >> AT+CMR3
+    >> AT+CMR=‘netID’ ‘password’
+ ```
 7. ThingSpeak - set up channel:
     ThingSpeark account
     ThingSpeak channel
