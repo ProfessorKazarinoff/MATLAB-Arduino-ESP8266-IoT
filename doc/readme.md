@@ -94,7 +94,6 @@ Summary:
 
     Connect Arduino - logicconverter- ESP8266
     
-    ![Alt Name](/doc/Redboard_ESP8266_software_serial.png)
     
     Upload Sketch
     Test Arduino - ESP8266 software serial
