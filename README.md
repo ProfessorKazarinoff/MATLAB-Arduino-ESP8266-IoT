@@ -20,26 +20,26 @@ No admin access on PC's, students can’t install drivers or new software.
 - Arduino - Upload code, push sensor readings to ThingSpeak
 - PC - view sensor data on ThingSpeak
 
-# Assemble Hardware
+### Assemble Hardware
 
-# ESP8266 reflesh and test
->> AT+GMR
+### ESP8266 reflesh and test
+`>> AT+GMR
 
 AT+GMR
 AT version:1.2.0.0(Jul  1 2016 20:04:45)
 SDK version:1.5.4.1(39cb9a32)
 Ai-Thinker Technology Co. Ltd.
 Dec  2 2016 14:21:16
-OK
+OK'
 
 
 
-# ESP8266 set default baud rate 9600
+### ESP8266 set default baud rate 9600
 
->> AT+UART_DEF=9600,8,1,0,0
+`>> AT+UART_DEF=9600,8,1,0,0'
 
 In the Arduino serial monitor, select 9600 baud
- >> AT
+ `>> AT
  
  AT
  
@@ -110,7 +110,7 @@ WIFI DISCONNECT
 
 No AP
 
-OK
+OK'
 
 
 
