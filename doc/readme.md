@@ -17,7 +17,7 @@ Summary:
 8. Arduino - Upload code, push sensor readings to ThingSpeak
 9. PC - view sensor data on ThingSpeak
  
-1. Assemble Hardware:
+## Assemble Hardware:
 
 ### Bill of Materials
     
@@ -46,6 +46,7 @@ Summary:
     
     Plug in ESP 8266 with USB cable
     open Arduin0 Serial monitor: 11520 baud, Both RL / TL
+    ```
     AT —> ready
     AT-RST —> ready
     AT-GMR —> firmware version
@@ -56,20 +57,24 @@ Summary:
     Test: AT —> ready
     AT-RST —> ready
     AT-GMR —> firmware version
+    ```
  
 3. ESP8266 set baud rate 9600 and test:
     Change ESP8266 Serial baud rate - AT+UART_DEF(9600,0,0,1) 
     Connect ESP8266 RX-TX, TX-RX, RST-3.3V CHMD-3.3V GND-GND VCC-3.3V
     Serial Monitor: 9600 Baud, Both RL / NL
+    ```
     Test: AT —> Ready AT-RST, AT-GMR
+    ```
     Test ESP8266 can log onto network
+    ```
     AT+CMR=? (which mode)
     AT+CMR=3 (client mode)
     AT+CMR=‘netID’ ‘password’ (WiFi connect)
     AT + CMR = disconnect
     AT + RST
     AT
-    
+    ```
  
 4. Arduino: Upload code test photocell
     Connect Arduino and Photocell, LED
