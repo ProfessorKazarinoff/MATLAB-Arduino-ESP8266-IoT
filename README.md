@@ -40,9 +40,10 @@ OK
 
 ```
 >> AT+UART_DEF=9600,8,1,0,0'
-
+```
 In the Arduino serial monitor, select 9600 baud
- `>> AT
+ ```
+ >> AT
  
  AT
  
