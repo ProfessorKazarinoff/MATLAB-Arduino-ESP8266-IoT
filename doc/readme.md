@@ -1,4 +1,4 @@
-## MATLAB-Arduino-ESP8266-IoT Student Project Trouble Shooting
+# MATLAB-Arduino-ESP8266-IoT Student Project Trouble Shooting
  
 Problem Statement: 
     Upload light sensor data wirelessly using an Arduino and ESP8266
@@ -7,27 +7,28 @@ Assumptions:
     No admin access on PC, can’t install drivers or software
  
 Summary: 
-    1. Assemble Hardware
-    2. ESP8266 refresh and test
-    3. ESP8266 set default baud rate 9600
-    4. Arduino - Upload Code, test photo cell
-    5. Arduino - ESP8266 soft serial test to PC
-    6. Arduino - Upload Code, test software serial to ESP8266
-    7. ThingSpeak - set up channel
-    8. Arduino - Upload code, push sensor readings to ThingSpeak
-    9. PC - view sensor data on ThingSpeak
+1. Assemble Hardware
+2. ESP8266 refresh and test
+3. ESP8266 set default baud rate 9600
+4. Arduino - Upload Code, test photo cell
+5. Arduino - ESP8266 soft serial test to PC
+6. Arduino - Upload Code, test software serial to ESP8266
+7. ThingSpeak - set up channel
+8. Arduino - Upload code, push sensor readings to ThingSpeak
+9. PC - view sensor data on ThingSpeak
  
 1. Assemble Hardware:
-    Bill of Materials
+
+### Bill of Materials
     
 | Component     | URL           |
 | ------------- | ------------- |
 | Arduino - Sparkfun Redboard  |![Redboard at Sparkfun](https://www.sparkfun.com/products/13975?_ga=2.75723669.1619575078.1498623788-1288264142.1469139950) |
 | ESP8266  | ![ESP8266 on Amazon](https://www.amazon.com/gp/product/B01MT6T73L/ref=oh_aui_detailpage_o00_s00?ie=UTF8&psc=1)  |
 | Bi-directional logic converter  | ![Logic Converter on Amazon](https://www.amazon.com/gp/product/B014MC1OAG/ref=oh_aui_detailpage_o01_s00?ie=UTF8&psc=1)  |
-| Voltage regulator | Content Cell  |
+| Breadboard Power Supply | Amazon |
 | M/M Jumper Wires  | ![M/M 6" Jumper wires at Sparkfun](https://www.sparkfun.com/products/8431)  |
-| Breadboard  | Content Cell  |
+| Breadboard  | Sparkfun  |
 | Mini-B USB Cable  | ![Mini-B to A USB cable at Sparkfun](https://www.sparkfun.com/products/11301?_ga=2.114882823.1619575078.1498623788-1288264142.1469139950)  |
     
     Fritzing Diagram
