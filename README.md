@@ -41,7 +41,7 @@ OK
 ```
 >> AT+UART_DEF=9600,8,1,0,0'
 ```
-In the Arduino serial monitor, select 9600 baud
+In the Arduino serial monitor, select 9600 baud. Check to confirm serial communication
  ```
  >> AT
  
@@ -67,7 +67,9 @@ ready
  Ai-Thinker Technology Co. Ltd.
  Dec  2 2016 14:21:16
 OK
-
+```
+Attempt to connect to WiFi network
+```
 >> AT+CWJAP?
 
 No AP
@@ -98,11 +100,7 @@ OK
 
 >> AT+CWLAP
 
-+CWLAP:(4,"SSID1",-44,"e8:89:2c:0f:f5:80",1,32767,0)
-+CWLAP:(4,"SSID2",-64,"b0:7f:b9:3b:19:aa",1,1,0)
-+CWLAP:(4,"SSID3",-72,"60:02:92:aa:ac:a0",1,-6,0)
-+CWLAP:(0,"xfinitywifi",-72,"60:02:92:aa:ac:a2",1,-6,0)
-+CWLAP:(0,"xfinitywifi",-34,"e6:89:2c:0f:f5:80",1,32767,0)
+[list of connected devices connected to the netwrok]
 
 >> AT+CWQAP
 
