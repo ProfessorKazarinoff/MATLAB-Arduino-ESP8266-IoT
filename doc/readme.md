@@ -59,13 +59,29 @@ Summary:
     AT-GMR —> firmware version
     ```
  
-3. ESP8266 set baud rate 9600 and test:
-    Change ESP8266 Serial baud rate - AT+UART_DEF(9600,0,0,1) 
+3. ESP8266 set baud rate 9600 and test: 
+    To change ESP8266 Serial baud rate - AT+UART_DEF=9600,8,1,0,0
+    (may be used on other ESP8266 boards: AT+UART_DEF(9600,0,0,1) ) 
+    
     Connect ESP8266 RX-TX, TX-RX, RST-3.3V CHMD-3.3V GND-GND VCC-3.3V
-    Serial Monitor: 9600 Baud, Both RL / NL
+    Serial Monitor: 115200  baud, Both RL / NL
+    With an ESP8266-01S ```>>> AT+GMR``` returned AT and SDK versions of
     ```
-    Test: AT —> Ready AT-RST, AT-GMR
+    AT+GMR
+    AT version:1.2.0.0(Jul  1 2016 20:04:45)
+    SDK version:1.5.4.1(39cb9a32)
+    Ai-Thinker Technology Co. Ltd.
+    Dec  2 2016 14:21:16
+    OK
     ```
+    
+    To change ESP8266 Serial baud rate - (may be used on other ESP8266 boards AT+UART_DEF(9600,0,0,1) ) 
+    ```
+    AT+UART_DEF=9600,8,1,0,0
+    ```
+    Then change to 9600 baud on the Serial Monitor
+    Serial Monitor: 115200  baud, Both RL / NL
+    
     Test ESP8266 can log onto network
     ```
     AT+CMR=? (which mode)
