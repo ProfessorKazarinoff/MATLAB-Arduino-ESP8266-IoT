@@ -1,10 +1,10 @@
 # MATLAB-Arduino-ESP8266-IoT Student Project Trouble Shooting
  
 Problem Statement: 
-    Upload light sensor data wirelessly using an Arduino and ESP8266
+    Upload light sensor data wirelessly using an Arduino and ESP8266 in a college engineering lab.
  
 Assumptions: 
-    No admin access on PC, can’t install drivers or software
+    No admin access on PC, can’t install drivers or software. Encripted WiFi connection that requires a username and password in addition to an SSID.
  
 Summary: 
 1. Assemble Hardware
