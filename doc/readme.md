@@ -45,8 +45,8 @@ Summary:
     ![Alt Name](/doc/Redboard_ESP8266_passthru_serial_bb.png)
     
     
-    Plug in ESP 8266 with USB cable
-    open Arduin0 Serial monitor: 11520 baud, Both RL / TL
+    Plug in the USB cable from the Arduino to the computer. This will connect the ESP8266 (through the Arduino) to the computer.
+    Open the Arduino Serial monitor: 11520 baud, Both RL / TL. This allows us to directly communicate with the ESP8266. 
     ```
     AT —> ready
     AT-RST —> ready
@@ -95,11 +95,11 @@ Summary:
  
 4. Arduino: Upload code test photocell
     Connect Arduino and Photocell, LED
-    Upload sketch
+    Upload Arduino sketch. Ensure COM port is set correclty.
     View Serial Monitor, 9600 for photocell readings
  
 5. Arduino Software Serial to PC Test:
-    install software serial library
+    In Arduino IDE, install software serial library
     Connect Arduino D8, D9 to TTL converter
     Upload Sketch and test software serial between Arduino and PC.
     View Serial Monitor, 9600 for photocell readings
@@ -109,11 +109,13 @@ Summary:
  
 6. Arduino Software Serial to ESP8266 Test:
 
-    Connect Arduino - logicconverter- ESP8266
+    Connect Arduino D8, D9, 5v, GND - logicconverter- ESP8266
     
     
-    Upload Sketch
+    
+    Upload software serial pass through sketch to Arudino
     Test Arduino - ESP8266 software serial
+    
  ```
     >> AT
     >> AT+RST
@@ -122,6 +124,7 @@ Summary:
     >> AT+CMR3
     >> AT+CMR=‘netID’ ‘password’
  ```
+ 
 7. ThingSpeak - set up channel:
     ThingSpeark account
     ThingSpeak channel
