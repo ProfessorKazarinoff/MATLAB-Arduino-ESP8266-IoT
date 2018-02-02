@@ -1,4 +1,4 @@
-﻿# MATLAB-Arduino-ESP8266-IoT
+# MATLAB-Arduino-ESP8266-IoT
 A student project for ENGR114 at Portland Community College. Uses MATLAB connected to an Arudino over serial to control an ESP8266 over serial that can connect over WiFi to an IoT server.
 
 ## Problem Statement: 
@@ -56,27 +56,110 @@ Asseble PC --> Arduino --> Logic Level Converter --> ESP8266 <-- Power Supply
 |               |                        |                        | CHPD        |   +3.3 V         |
 |               |                        |                        | RST         |   +3.3 V         |
 
-### ESP8266 reflesh and test
+### ESP8266 Test
+
+Plug in the USB cable from the Arduino to the computer. This will connect the ESP8266 (through the Arduino) to the computer. Open the Arduino Serial monitor (Tools --> Serial Monitor): 
+* 9600 baud
+* Both NL & CR.
+* Ensure Tools --> Port is set correctly 'COM5' is common
+
+This allows the computer to directly communicate with the ESP8266. Switch on the breadboard power supply to power the ESP8266. 
+
+### ESP8266 Test Commands
 ```
+>> AT
+
+OK
+
+>> AT+RST
+
+c_�RS�fJ[zfJ[:fN��O�G�G��SO�
+Ai-Thinker Technology Co. Ltd.
+
+ready
+
 >> AT+GMR
 
-AT+GMR
 AT version:1.2.0.0(Jul  1 2016 20:04:45)
 SDK version:1.5.4.1(39cb9a32)
 Ai-Thinker Technology Co. Ltd.
 Dec  2 2016 14:21:16
 OK
+
+>>AT+CWJAP?
+
+No AP
+
+OK
+
+>>AT+CWMODE?
+
++CWMODE:3
+
+OK
+
+>> AT+CWMODE=3
+
+
+OK
+
+>> AT+CWMODE?
+
++CWMODE:3
+
+OK
+
+>> AT+CWJAP="Your SSID","Your WiFi Password"
+
+WIFI CONNECTED
+WIFI GOT IP
+
+OK
+
+>> AT+CWJAP?
+
++CWJAP:"Your SSID","e8:89:2c:0f:f5:80",1,-45
+
+OK
+
+>> AT+CWLAP
+
+[list of connected devices connected to the netwrok]
+
+>> AT+CWQAP
+
+
+OK
+WIFI DISCONNECT
+
+>> AT+CWJAP?
+
+No AP
+
+OK
+
+>> AT+RST
+OK
+c_⸮RS⸮fJ[zf[zfN⸮⸮O⸮G⸮G⸮⸮S⸮؛⸮⸮⸮⸮⸮⸮⸮
+Ai-Thinker Technology Co. Ltd.
+
+>> AT
+
+OK
+
 ```
+If All of the above commands work, you do not need to set the default baud rate to 9600 or flash the firmware using esptool.py. If the above commands do not work, you may need to change the default baud rate and upload new firmware.
 
 
+#### ESP8266 set default baud rate 9600
 
-### ESP8266 set default baud rate 9600
-
+Connect at 115200 baud.
 ```
 >> AT+UART_DEF=9600,8,1,0,0'
 ```
 In the Arduino serial monitor, select 9600 baud. Check to confirm serial communication
- ```
+
+```
  >> AT
  
  AT
@@ -94,62 +177,24 @@ Ai-Thinker Technology Co. Ltd.
 
 ready
 
->> AT+GMR
- AT+GMR
- AT version:1.2.0.0(Jul  1 2016 20:04:45)
- SDK version:1.5.4.1(39cb9a32)
- Ai-Thinker Technology Co. Ltd.
- Dec  2 2016 14:21:16
-OK
-```
-Attempt to connect to WiFi network
-```
->> AT+CWJAP?
-
-No AP
-
-OK
->> AT+CWMODE=3
-
-
-OK
-
->> AT+CWMODE?
-
-+CWMODE:3
-
-OK
->> AT+CWJAP="Your SSID","Your WiFi Password"
-
-WIFI CONNECTED
-WIFI GOT IP
-
-OK
-
->>  AT+CWJAP?
-
-+CWJAP:"Your SSID","e8:89:2c:0f:f5:80",1,-45
-
-OK
-
->> AT+CWLAP
-
-[list of connected devices connected to the netwrok]
-
->> AT+CWQAP
-
-
-OK
-WIFI DISCONNECT
-
->>AT+CWJAP?
-
-No AP
-
-OK
 ```
 
+#### Use esptool.py to upload new firmware
+Need to pip install esptool, download proper bin file and upload to the ESP8266
 
+### Arduino - Upload Code, test photo cell
+
+### Arduino - ESP8266 soft serial test to PC
+
+### Arduino - Upload Code, test software serial to ESP8266
+   consider changing soft serial baud rate to 4800 and ESP8266 baud rate to 4800 and increasing software serial cache size
+   mySerial swSerial(4800,false,256)?
+   
+### ThingSpeak - set up channel
+
+### Arduino - Upload code, push sensor readings to ThingSpeak
+
+###  PC - view sensor data on ThingSpeak
 
 
 ## License:
