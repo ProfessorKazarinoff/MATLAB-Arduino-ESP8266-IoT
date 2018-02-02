@@ -12,6 +12,7 @@ No admin access on college computers, students can’t install drivers or new so
 2. Wire together ESP8266, logic converter, Arudio and power supply
 3.  ESP8266 test.
  1. ESP8266 set default baud rate 9600
+ 2. Upload new firmware with esptool.py
 4. Arduino - Upload Code, test photo cell
 5. Arduino - ESP8266 soft serial test to PC
 6. Arduino - Upload Code, test software serial to ESP8266
@@ -42,13 +43,17 @@ Asseble PC --> Arduino --> Logic Level Converter --> ESP8266 <-- Power Supply
 
 ![Alt Name](/doc/Redboard_ESP8266_passthru_serial_bb.png)
 
-#### Hookup Guide
+##### Hookup Guide
 
 | Arudino Pin   | HV Logic Converter Pin | LV Logic Converter Pin | ESP8266 Pin | Power Supply Pin |
 | ------------- | ---------------------- | ---------------------- | ------------| ---------------- |
 | RST -to- GRN  |                        |                        |             |                  |
-| 5V            | HV                     | LV                     |  VCC        |   +3.3 V         |
+| 5V            | HV                     | LV                     | VCC         |   +3.3 V         |
 | GND           | GND                    | GND                    | GND         |    GND           |
+| TX-->1        | HV1                    | LV1                    | TXD         |                  |
+| RX<--0        | HV2                    | LV2                    | RXD         |                  |
+|               |                        |                        | CHPD        |   +3.3 V         |
+|               |                        |                        | RST         |   +3.3 V         |
 
 ### ESP8266 reflesh and test
 ```
