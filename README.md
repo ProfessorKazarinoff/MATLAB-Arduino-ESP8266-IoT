@@ -10,9 +10,9 @@ No admin access on college computers, students can’t install drivers or new so
 ## Summary:
 1. Assemble Hardware
 2. Wire together ESP8266, logic converter, Arudio and power supply
-3.  ESP8266 test.
- 1. ESP8266 set default baud rate 9600
- 2. Upload new firmware with esptool.py
+3. ESP8266 test
+ - ESP8266 set default baud rate 9600
+ - Upload new firmware with esptool.py
 4. Arduino - Upload Code, test photo cell
 5. Arduino - ESP8266 soft serial test to PC
 6. Arduino - Upload Code, test software serial to ESP8266
