@@ -29,14 +29,14 @@ No admin access on college computers, students can’t install drivers or new so
     
 | Component     | URL           |
 | ------------- | ------------- |
-| Arduino - Sparkfun Redboard  |![Redboard at Sparkfun](https://www.sparkfun.com/products/13975?_ga=2.75723669.1619575078.1498623788-1288264142.1469139950) |
-| ESP8266  | ![ESP8266 on Amazon](https://www.amazon.com/gp/product/B01MT6T73L/ref=oh_aui_detailpage_o00_s00?ie=UTF8&psc=1)  |
-| Bi-directional logic converter  | ![Logic Converter on Amazon](https://www.amazon.com/gp/product/B014MC1OAG/ref=oh_aui_detailpage_o01_s00?ie=UTF8&psc=1)  |
-| Breadboard Power Supply | ![Breadboard Power Supply on Amazon](https://www.amazon.com/UCEC-Breadboard-Supply-Arduino-Solderless/dp/B01ELAGIO6/ref=sr_1_fkmr0_1?s=electronics&ie=UTF8&qid=1504628907&sr=1-1-fkmr0&keywords=UCES+MB102+3.3V%2F5V+Breadboard) |
-| M/M Jumper Wires  | ![M/M 6" Jumper wires at Sparkfun](https://www.sparkfun.com/products/8431)  |
-| Breadboard  | ![Mini Breadboard at Sprakfun](Sparkfun )|
-| Breadboard Adapter for ESP8266 | ![ESP8266 breadboard breakout adapter on Amazon](https://www.amazon.com/DIYmall-ESP8266-Breakout-Breadboard-Transceiver/dp/B01G6HK3KW/ref=sr_1_sc_1?s=electronics&ie=UTF8&qid=1504629134&sr=1-1-spell&keywords=DIY+mall+esp8266+esp-01+Breakout+board)|
-| Mini-B USB Cable  | ![Mini-B to A USB cable at Sparkfun](https://www.sparkfun.com/products/11301?_ga=2.114882823.1619575078.1498623788-1288264142.1469139950)  |
+| Arduino - Sparkfun Redboard  |[Redboard at Sparkfun](https://www.sparkfun.com/products/13975?_ga=2.75723669.1619575078.1498623788-1288264142.1469139950) |
+| ESP8266  | [ESP8266 on Amazon](https://www.amazon.com/gp/product/B01MT6T73L/ref=oh_aui_detailpage_o00_s00?ie=UTF8&psc=1)  |
+| Bi-directional logic converter  | [Logic Converter on Amazon](https://www.amazon.com/gp/product/B014MC1OAG/ref=oh_aui_detailpage_o01_s00?ie=UTF8&psc=1)  |
+| Breadboard Power Supply | [Breadboard Power Supply on Amazon](https://www.amazon.com/UCEC-Breadboard-Supply-Arduino-Solderless/dp/B01ELAGIO6/ref=sr_1_fkmr0_1?s=electronics&ie=UTF8&qid=1504628907&sr=1-1-fkmr0&keywords=UCES+MB102+3.3V%2F5V+Breadboard) |
+| M/M Jumper Wires  | [M/M 6" Jumper wires at Sparkfun](https://www.sparkfun.com/products/8431)  |
+| Breadboard  | [Mini Breadboard at Sprakfun](Sparkfun )|
+| Breadboard Adapter for ESP8266 | [ESP8266 breadboard breakout adapter on Amazon](https://www.amazon.com/DIYmall-ESP8266-Breakout-Breadboard-Transceiver/dp/B01G6HK3KW/ref=sr_1_sc_1?s=electronics&ie=UTF8&qid=1504629134&sr=1-1-spell&keywords=DIY+mall+esp8266+esp-01+Breakout+board)|
+| Mini-B USB Cable  | [Mini-B to A USB cable at Sparkfun](https://www.sparkfun.com/products/11301?_ga=2.114882823.1619575078.1498623788-1288264142.1469139950)  |
 
 ### Wire together ESP8266-Logic Converter-Arduino and Power Supply
 
