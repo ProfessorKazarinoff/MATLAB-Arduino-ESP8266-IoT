@@ -42,7 +42,7 @@ No admin access on college computers, students can’t install drivers or new so
 
 Asseble PC --> Arduino --> Logic Level Converter --> ESP8266 <-- Power Supply
 
-![Alt Name](/doc/Redboard_ESP8266_passthru_serial_bb.png)
+![Alt Name](/doc/redboard_power_esp_fritzing_sketch_bb.png)
 
 ##### Hookup Guide
 
