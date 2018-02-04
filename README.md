@@ -142,6 +142,10 @@ OK
 
 512 KB
 
+>> AT+CIFSR
+
+IP Adress
+
 >> AT+RST
 OK
 c_⸮RS⸮fJ[zf[zfN⸮⸮O⸮G⸮G⸮⸮S⸮؛⸮⸮⸮⸮⸮⸮⸮
