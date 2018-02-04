@@ -148,7 +148,7 @@ Ai-Thinker Technology Co. Ltd.
 OK
 
 ```
-If All of the above commands work, you do not need to set the default baud rate to 9600 or flash the firmware using esptool.py. If the above commands do not work, you may need to change the default baud rate and upload new firmware.
+If all of the above commands work, you do not need to set the default baud rate to 9600 or flash the firmware using esptool.py. If the above commands do not work, you may need to change the default baud rate and upload new firmware.
 
 
 #### ESP8266 set default baud rate 9600
@@ -180,19 +180,27 @@ ready
 ```
 
 #### Use esptool.py to upload new firmware
-Need to pip install esptool, download proper bin file and upload to the ESP8266
+Need to ```pip``` to install esptool.py, download proper bin file and upload to the ESP8266
 
 ### Arduino - Upload Code, test photo cell
 
-### Arduino - ESP8266 soft serial test to PC
+future link to Arduino Photocell Code
 
-### Arduino - Upload Code, test software serial to ESP8266
-   consider changing soft serial baud rate to 4800 and ESP8266 baud rate to 4800 and increasing software serial cache size
-   mySerial swSerial(4800,false,256)?
+### Arduino - Upload Code, ESP8266 soft serial test to PC
+
+future link to Arduino soft serial test to PC code
+
+consider changing soft serial baud rate to 4800 and ESP8266 baud rate to 4800 and increasing software serial cache size ```mySerial swSerial(4800,false,256)?```
+
+### Arduino - Upload Code, test software serial to ESP8266, hard serial to PC
+
+If this does not work, use soft serial between PC and Arduino and hard serial between Arduino and ESP8266.
    
 ### ThingSpeak - set up channel
 
 ### Arduino - Upload code, push sensor readings to ThingSpeak
+
+future link to Arduino code
 
 ###  PC - view sensor data on ThingSpeak
 
