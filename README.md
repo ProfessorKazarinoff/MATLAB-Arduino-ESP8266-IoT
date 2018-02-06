@@ -67,6 +67,24 @@ Plug in the USB cable from the Arduino to the computer. This will connect the ES
 This allows the computer to directly communicate with the ESP8266. Switch on the breadboard power supply to power the ESP8266. 
 
 ### ESP8266 Test Commands
+
+Try the following commands in the Serial Monitor:
+
+```
+AT
+AT+RST
+AT+GMR
+AT+CWJAP?
+AT+CWMODE?
+AT+CWLAP
+AT+CIPSTAMAC?
+AT+CIFSR
+AT+RST
+AT
+```
+
+The Serial Monitor output of these commands should look like the output below:
+
 ```
 >> AT
 
