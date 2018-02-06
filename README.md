@@ -64,6 +64,8 @@ Plug in the USB cable from the Arduino to the computer. This will connect the ES
 * Both NL & CR.
 * Ensure Tools --> Port is set correctly 'COM5' is common
 
+![serial monitor](/doc/serial_monitor.PNG)
+
 This allows the computer to directly communicate with the ESP8266. Switch on the breadboard power supply to power the ESP8266. 
 
 ### ESP8266 Test Commands
