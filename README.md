@@ -139,9 +139,9 @@ No AP
 
 OK
 
->> AT+SYSRAM
+>> AT+CIPSTAMAC?
 
-512 KB
+[MAC Address]
 
 >> AT+CIFSR
 
