@@ -62,7 +62,7 @@ Asseble PC --> Arduino --> Logic Level Converter --> ESP8266 <-- Power Supply
 Plug in the USB cable from the Arduino to the computer. This will connect the ESP8266 (through the Arduino) to the computer. Open the Arduino Serial monitor (Tools --> Serial Monitor): 
 * 9600 baud
 * Both NL & CR.
-* Ensure Tools --> Port is set correctly 'COM5' is common
+* Ensure Tools --> Port is set correctly 'COM4' is common
 
 ![serial monitor](/doc/serial_monitor.PNG)
 
