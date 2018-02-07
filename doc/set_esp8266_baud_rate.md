@@ -26,4 +26,10 @@ AT+RST
 AT+GMR
 ```
 
-If this works, you are successful, go back to the [main readme](../README.md) and try the full set of ```AT``` commands in the Serial Monitor
+The full output as a result of these commands should be something like:
+
+```
+AT Commands
+```
+
+If this works, you successfully changed the ESP8266 baud rate. Go back to the [main readme](../README.md) and try the full set of ```AT``` commands in the Serial Monitor.
