@@ -32,7 +32,7 @@ The second mode is bootloader mode. In bootloader mode, the ESP8266 is set up to
 Since we want to upload new firmware, we need to set the ESP8266 in bootloader mode. You can put the ESP8266 in bootloader mode by turning off the power to the ESP8266, then connecting the GPIO1 pin to ground, then turning the ESP8266 power back on. When GPIO1 is connected to ground, the ESP8266 is in bootloader mode and the firmware can be uploaded. Once the firmware has been uploaded, turn the power off, and unhook the GPIO1 from ground. Then turn the power back on and the ESP8266 will be back in normal opperating mode.
 
 6. Write the .bin files to the ESP8266 flash memory
-Once the .bin files are in the current folder, and the ESP8266 is in bootloader mode run the following command in the Anaconda Prompt to uploaded the .bin firmware to the ESP8266:
+Once the .bin files are in the current folder and the ESP8266 is in bootloader mode, run the following command in the Anaconda Prompt to uploaded the .bin firmware to the ESP8266:
 
 ```
 esptool.py --port COM4 write_flash 0x1000 my_app-0x01000.bin
