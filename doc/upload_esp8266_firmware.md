@@ -29,7 +29,29 @@ The ESP8255 has two modes. The first mode is normal opperating mode. ESP8266 is 
 
 The second mode is bootloader mode. In bootloader mode, the ESP8266 is set up to accept new firmware or a new program. In bootloader mode, you can't connect to WiFi or run AT commands. You only put the ESP8266 in bootloader mode when you want to upload new firmware or programs. 
 
-Since we want to upload new firmware, we need to set the ESP8266 in bootloader mode. You can put the ESP8266 in bootloader mode by connecting the GPIO1 pin to ground. Once the firmware has been uploaded, turn the power off, and unhook the GPIO1 from ground. Then turn the power back on and the ESP8266 will be back in normal opperating mode.
+Since we want to upload new firmware, we need to set the ESP8266 in bootloader mode. You can put the ESP8266 in bootloader mode by turning off the power to the ESP8266, then connecting the GPIO1 pin to ground, then turning the ESP8266 power back on. When GPIO1 is connected to ground, the ESP8266 is in bootloader mode and the firmware can be uploaded. Once the firmware has been uploaded, turn the power off, and unhook the GPIO1 from ground. Then turn the power back on and the ESP8266 will be back in normal opperating mode.
 
 6. Write the .bin files to the ESP8266 flash memory
-Once the .bin files are in the current folder, run the following command in the Anaconda Prompt to 
+Once the .bin files are in the current folder, and the ESP8266 is in bootloader mode run the following command in the Anaconda Prompt to uploaded the .bin firmware to the ESP8266:
+
+```
+esptool.py --port COM4 write_flash 0x1000 my_app-0x01000.bin
+```
+
+To verify that the flash memory has been written correctly run the following in the Anaconda Prompt
+
+```
+esptool.py verify_flash 0x40000 my_app.elf-0x40000.bin
+```
+
+7. Power down the ESP8266 and disconnect the GPIO1 pin from ground. Then turn the power back on. 
+
+Try the simple AT commands in the Serial Monitor to test the ESP8266 and it's new firmware:
+
+```
+AT
+AT+RST
+AT+GMR
+```
+
+If everything works correctly, go back to the [main readme](../README.md) and test the full set of ```AT``` commands.
