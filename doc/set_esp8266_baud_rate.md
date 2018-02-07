@@ -9,7 +9,7 @@ To change the baud rate:
 2. Type the following command into the Serial Monitor. If the first command does not work, some ESP8266 boards use the second command instead
 
 ```
-AT...
+AT+UART_DEF=9600,8,1,0,0
 ```
 
 or
