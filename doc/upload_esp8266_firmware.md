@@ -22,7 +22,7 @@ esptool.py write_flash -h
 You should see the help file for writing to the ESP8266 flash memory.
 
 4. Locate the .bin files
-You need to locate and download the proper .bin files in order to write them to the ESP8266
+You need to locate and download the proper .bin files in order to write them to the ESP8266. Getting the .bin files is a little complicated. Follow the README in this repo([ESP8266_RTOS_SDK](https://github.com/espressif/ESP8266_RTOS_SDK)), created by espressif, the company that makes the ESP8266.
 
 5. Put the ESP8266 in bootloader mode
 The ESP8255 has two modes. The first mode is normal opperating mode. ESP8266 is usually in normal opperating mode the. In normal opperating mode ```AT``` command can be sent back and forth, the ESP8266 can connect to WiFi etc. In normal opperating mode you can't upload new firmware or programs on the ESP8266. 
