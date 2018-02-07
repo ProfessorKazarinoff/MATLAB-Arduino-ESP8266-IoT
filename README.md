@@ -78,6 +78,9 @@ AT+RST
 AT+GMR
 AT+CWJAP?
 AT+CWMODE?
+AT+CWMODE=3
+AT+CWMODE?      #[should be +CWMODE:3]
+AT+CWJAP="Your SSID","Your WiFi Password"
 AT+CWLAP
 AT+CIPSTAMAC?
 AT+CIFSR
@@ -181,6 +184,10 @@ If all of the above commands work, you do not need to set the default baud rate 
 
 
 #### ESP8266 set default baud rate 9600
+
+Follow these instructions to set the ESP8266 default baud rate to 9600:
+
+[set ESP8266 baud rate](/doc/set_esp8266_baud_rate.md)
 
 Connect at 115200 baud.
 ```
