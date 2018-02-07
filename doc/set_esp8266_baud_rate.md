@@ -15,7 +15,7 @@ AT+UART_DEF=9600,8,1,0,0
 or
 
 ```
-AT...
+AT+UART_DEF(9600,0,0,1)
 ```
 
 3. Set the Serial Monitor to 9600 baud and try the following commands:
