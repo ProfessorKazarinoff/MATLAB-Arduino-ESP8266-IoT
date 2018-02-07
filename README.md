@@ -187,33 +187,8 @@ If all of the above commands work, you do not need to set the default baud rate 
 
 Follow these instructions to set the ESP8266 default baud rate to 9600:
 
-[set ESP8266 baud rate](/doc/set_esp8266_baud_rate.md)
-
-Connect at 115200 baud.
-```
->> AT+UART_DEF=9600,8,1,0,0'
-```
-In the Arduino serial monitor, select 9600 baud. Check to confirm serial communication
-
-```
- >> AT
- 
- AT
- 
- OK
-
-
->> AT+RST
-
-
-OK
-c_�RS�fJ[zfJ[:fN��O�G�G��SO�
-X�������
-Ai-Thinker Technology Co. Ltd.
-
-ready
-
-```
+   [set ESP8266 baud rate](/doc/set_esp8266_baud_rate.md)
+   
 
 #### Use esptool.py to upload new firmware
 Need to ```pip``` to install esptool.py, download proper bin file and upload to the ESP8266
