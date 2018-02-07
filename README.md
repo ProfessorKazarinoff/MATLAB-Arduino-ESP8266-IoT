@@ -187,13 +187,13 @@ If all of the above commands work, you do not need to set the default baud rate 
 
 Follow these instructions to set the ESP8266 default baud rate to 9600:
 
-   [set ESP8266 baud rate](/doc/set_esp8266_baud_rate.md)
+[set ESP8266 baud rate](/doc/set_esp8266_baud_rate.md)
    
 
 #### Use esptool.py to upload new firmware
 This is a faily involved process and not for the faint of heart. If the AT command's don't work even after the default baud rate was set to 9600 baud, follow these instructions to upload new firmware to the ESP8266 using esptool.py
 
-    [Upload new firmware](/doc/upload_firmware.md)
+[Upload new firmware](/doc/upload_firmware.md)
 
 ### Arduino - Upload Code, test photo cell
 
