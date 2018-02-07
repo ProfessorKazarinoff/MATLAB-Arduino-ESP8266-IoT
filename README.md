@@ -49,7 +49,7 @@ Asseble PC --> Arduino --> Logic Level Converter --> ESP8266 <-- Power Supply
 
 | Arudino Pin   | HV Logic Converter Pin | LV Logic Converter Pin | ESP8266 Pin | Power Supply Pin |
 | ------------- | ---------------------- | ---------------------- | ------------| ---------------- |
-| RST -to- GRN  |                        |                        |             |                  |
+| RST -to- GND  |                        |                        |             |                  |
 | 5V            | HV                     | LV                     | VCC         |   +3.3 V         |
 | GND           | GND                    | GND                    | GND         |    GND           |
 | TX-->1        | HV1                    | LV1                    | TXD         |                  |
