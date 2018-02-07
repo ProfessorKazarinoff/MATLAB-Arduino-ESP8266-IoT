@@ -4,7 +4,7 @@ If the ESP8266 does not respond to the ```AT``` commands typed into the Serial M
 
 To change the baud rate:
 
-1. Connect at 11152 baud using the Serial Monitor
+1. Try to connect to the ESP8266 at 115200 baud using the Serial Monitor. Ensure the Serial Monitor is set to ```Both NL & CR```
 
 2. Type the following command into the Serial Monitor. If the first command does not work, some ESP8266 boards use the second command instead
 
