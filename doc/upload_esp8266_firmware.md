@@ -34,13 +34,14 @@ The second mode is bootloader mode. In bootloader mode, the ESP8266 is set up to
 Since we want to upload new firmware, we need to set the ESP8266 in bootloader mode. You can put the ESP8266 in bootloader mode by turning off the power to the ESP8266, then connecting the GPIO1 pin to ground, then turning the ESP8266 power back on. When GPIO1 is connected to ground, the ESP8266 is in bootloader mode and the firmware can be uploaded. Once the firmware has been uploaded, turn the power off, and unhook the GPIO1 from ground. Then turn the power back on and the ESP8266 will be back in normal opperating mode.
 
 6. Write the .bin files to the ESP8266 flash memory
-Once the .bin files are in the current folder and the ESP8266 is in bootloader mode, run the following command in the Anaconda Prompt to uploaded the .bin firmware to the ESP8266:
+
+Once the .bin files are in the current folder and the ESP8266 is in bootloader mode, run the following command in the Anaconda Prompt to uploaded the .bin firmware to the ESP8266. You will need to check the port and change the .bin file name(s):
 
 ```
 esptool.py --port COM4 write_flash 0x1000 my_app-0x01000.bin
 ```
 
-To verify that the flash memory has been written correctly run the following in the Anaconda Prompt
+To verify that the flash memory has been written correctly run the following in the Anaconda Prompt. You will need to change the flash address ```0x40000``` and the .bin file name corresponding to the flash address and .bin file name used above when the ```write_flash``` command was called.
 
 ```
 esptool.py verify_flash 0x40000 my_app.elf-0x40000.bin
@@ -48,7 +49,7 @@ esptool.py verify_flash 0x40000 my_app.elf-0x40000.bin
 
 7. Power down the ESP8266 and disconnect the GPIO1 pin from ground. Then turn the power back on. 
 
-Try the simple AT commands in the Serial Monitor to test the ESP8266 and it's new firmware:
+The ESP8266 is back in normal opperating mode. Try the simple AT commands in the Serial Monitor to test the ESP8266 and it's new firmware:
 
 ```
 AT
