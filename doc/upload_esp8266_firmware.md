@@ -23,7 +23,7 @@ You should see the help file for writing to the ESP8266 flash memory.
 
 4. Get the .bin files
 
-You need to locate and aquire the proper .bin files in order to write them to the ESP8266. Getting the .bin files is a little complicated. First try: [https://github.com/espressif/ESP8266_AT/tree/master/bin](https://github.com/espressif/ESP8266_AT/tree/master/bin). You will see 3 .bin files in the main repo and a fourth .bin file in the newest folder. Copy down the flash addresses (ex: 00x00000). If that doesn't work, follow the README in this repo ([ESP8266_RTOS_SDK](https://github.com/espressif/ESP8266_RTOS_SDK)), created by espressif, the company that makes the ESP8266. At the end of it you should end up with a couple .bin files.
+You need to locate and aquire the proper .bin files in order to write them to the ESP8266. Getting the .bin files is a little complicated. First try: [https://github.com/espressif/ESP8266_AT/tree/master/bin](https://github.com/espressif/ESP8266_AT/tree/master/bin). You will see 3 .bin files in the main repo and a fourth .bin file in the newest folder. Copy down the flash addresses (ex: 0x00000) in the README file. If that doesn't work, follow the README in this repo ([ESP8266_RTOS_SDK](https://github.com/espressif/ESP8266_RTOS_SDK)), created by espressif, the company that makes the ESP8266. At the end of it you should end up with a couple .bin files.
 
 5. Put the ESP8266 in bootloader mode
 
@@ -35,7 +35,7 @@ Since we want to upload new firmware, we need to set the ESP8266 in bootloader m
 
 6. Write the .bin files to the ESP8266 flash memory
 
-Once the .bin files are in the current folder and the ESP8266 is in bootloader mode, run the following command in the Anaconda Prompt to uploaded the .bin firmware to the ESP8266. You will need to check the port and change the .bin file name(s):
+Once the .bin files are in the current folder and the ESP8266 is in bootloader mode, run the following command in the Anaconda Prompt to uploaded the .bin firmware to the ESP8266. You will need to check the port and change the .bin file names and addresses:
 
 ```
 esptool.py --port COM4 write_flash 0x1000 my_app-0x01000.bin
