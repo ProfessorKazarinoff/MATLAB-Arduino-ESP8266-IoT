@@ -23,7 +23,7 @@ You should see the help file for writing to the ESP8266 flash memory.
 
 4. Get the .bin files
 
-You need to locate and aquire the proper .bin files in order to write them to the ESP8266. Getting the .bin files is a little complicated. Follow the README in this repo ([ESP8266_RTOS_SDK](https://github.com/espressif/ESP8266_RTOS_SDK)), created by espressif, the company that makes the ESP8266. At the end of it you should end up with a couple .bin files.
+You need to locate and aquire the proper .bin files in order to write them to the ESP8266. Getting the .bin files is a little complicated. First try: [https://github.com/espressif/ESP8266_AT/tree/master/bin](https://github.com/espressif/ESP8266_AT/tree/master/bin). You will see 3 .bin files in the main repo and a fourth .bin file in the newest folder. Copy down the flash addresses (ex: 00x00000). If that doesn't work, follow the README in this repo ([ESP8266_RTOS_SDK](https://github.com/espressif/ESP8266_RTOS_SDK)), created by espressif, the company that makes the ESP8266. At the end of it you should end up with a couple .bin files.
 
 5. Put the ESP8266 in bootloader mode
 
