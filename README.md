@@ -199,30 +199,31 @@ This is a faily involved process and not for the faint of heart. If the AT comma
 
 Once the ESP8266 has been tested and works properly, there are two choices for how to use it:
 
-1. Upload programs directly to the ESP8266
+1. Upload programs directly to the ESP8266 (use Arduino as a serial cable)
 
-2. Upload programs on the Arudino
+2. Upload programs to the Arudino (use ESP8266 as a WiFi card)
 
 It depends on the project and complexity which one of these options will be the best. 
 
-If, you only need one GPIO pin and that pin only needs to be set as High or Low or that one pin only needs to read High or Low, then uploading programs directly to the ESP8266 might make sense. This means that all the functionality needs to be written into the program running on the ESP8266. You upload the program using the Arduino IDE and need to select the ESP8266 in the Tools--> Board menu.
+If you only need one GPIO pin and that pin only needs to be set as High or Low or that one GPIO pin only needs to read High or Low, then uploading programs directly to the ESP8266 might make sense. This means all the functionality needs to be written into the program running on the ESP8266. You upload the program using the Arduino IDE and need to select the ESP8266 in the Tools--> Board menu. The Arduino will just act like serial cable to connect the ESP8266 to a computer. No code will run on the Arduino.
 
-To run a program directly on the ESP8266, you can follow this tutorial: [Programming the ESP8266 with the Arduino IDE in 3 simple steps](https://ubidots.com/blog/esp8266-arduino-ide-tutorial/). Note the ESP8266 needs to be in bootloader mode when you upload the program (GPIO1 set to GND). When the ESP8266 runs your program, normal opperating mode, GPIO1 should not be set to ground. The only pin you can use to flip a switch or measure a High or Low signal is the GPIO2 pin (since you need the GPIO1 pin for bootloader mode).
+To run a program directly on the ESP8266, you can follow this tutorial: [Programming the ESP8266 with the Arduino IDE in 3 simple steps](https://ubidots.com/blog/esp8266-arduino-ide-tutorial/). Note the ESP8266 needs to be in bootloader mode when you upload the sketch (GPIO1 set to GND). When the ESP8266 runs your program, normal opperating mode, GPIO1 should not be set to ground. The only pin you can use to flip a switch or measure a High or Low signal is the GPIO2 pin (since you need the GPIO1 pin for bootloader mode).
 
 
-If, you need more than one GPIO pin or the GPIO pin needs to read a voltage (not just High or Low) or write a voltage (not just High or Low), you will need to upload code the Arduino. This means all of the functionality needs to be written into the program running on the Arduino. The Arduino will need to commuicate over serial to the ESP8266 and tell it what ```AT``` commands to run. You upload the program using the Arduino IDE and need to select the Arduino Uno in the Tools --> Board menu
+If, you need more than one GPIO pin or the GPIO pin needs to read a varied voltage (not just High or Low) or write a varied voltage (not just High or Low), you will need to upload code the Arduino. This means all of the functionality needs to be written into the program running on the Arduino. The Arduino will commuicate over serial to the ESP8266 and tell it what ```AT``` commands to run. You upload the program using the Arduino IDE and need to select the Arduino Uno in the Tools --> Board menu. No code needs to be uploaded to the ESP8266 (as long as it is working properly)
 
+To run code on the Arduino, follow the steps below:
 
 ### Arduino - Upload Code, test photo cell
 
 Future link to Arduino Photocell Code
 
 
-### Arduino - Upload Code, ESP8266 soft serial test to PC
+### Arduino - Upload Code, Arduino soft serial test to PC
 
-Future link to Arduino soft serial test to PC code
+Future link to Arduino soft serial test to PC code. Make sure soft serial works and that AT commands can be send between the Arduino and the PC over soft serial. These are the commands that the Arduino will send to the ESP8266. We just want to confirm that the commands are comming through by passing these commands to the PC instead of the ESP8266.
 
-consider changing soft serial baud rate to 4800 and ESP8266 baud rate to 4800 and increasing software serial cache size ```mySerial swSerial(4800,false,256)?```
+Consider changing soft serial baud rate to 4800 and ESP8266 baud rate to 4800 and increasing software serial cache size ```mySerial swSerial(4800,false,256)?```
 
 ### Arduino - Upload Code, test software serial to ESP8266, hard serial to PC
 
@@ -234,7 +235,7 @@ Set up a new channel on ThingSpeak.com. Make sure you have the channel number an
 
 ### Arduino - Upload code, push sensor readings to ThingSpeak
 
-Future link to Arduino code
+Future link to Arduino code. Arduino will measure sensor value and send value to ESP8266 over serial using AT commands.
 
 ###  PC - view sensor data on ThingSpeak
 
