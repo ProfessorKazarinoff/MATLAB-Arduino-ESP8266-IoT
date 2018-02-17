@@ -13,6 +13,7 @@ def connect(SSID,password):
 
 #https://docs.micropython.org/en/v1.8.6/esp8266/esp8266/tutorial/network_tcp.html
 def http_get(url):
+    import socket
     _, _, host, path = url.split('/', 3)
     addr = socket.getaddrinfo(host, 80)[0][-1]
     s = socket.socket()

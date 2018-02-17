@@ -63,6 +63,22 @@ Hook up an analog sensor to the ADC Pin
 >>> # will return a bunch of stuff. Number at end is data point number in thingspeak
 ```
 
+Putting this on the board using ampy
+
+```
+pip install ampy-adafruit
+```
+
+Run, put, list, get files off of the ESP8266
+```
+ampy --help
+ampy --port /serial/port run test.py
+ampy --port /serial/port run --no-output test.py
+ampy --port /serial/port put test.py
+ampy --port /serial/port ls
+ampy --port /serial/port get boot.py test.py
+```
+
 
 
 
