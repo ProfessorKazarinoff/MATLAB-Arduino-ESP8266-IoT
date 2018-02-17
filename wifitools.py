@@ -33,3 +33,4 @@ def thingspeak_post(API_key,data):
     mid_url = '&field1='
     url = base_url + API_key + mid_url + data
     http_get(url)
+
