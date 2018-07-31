@@ -106,3 +106,10 @@ ENV/
 
 # mypy
 .mypy_cache/
+
+# config files
+*config
+config.py
+*/config.py
+
+
