@@ -112,4 +112,7 @@ ENV/
 config.py
 */config.py
 
-
+# .bin firmware files
+*.bin
+firmware.bin
+firmware-combined.bin
