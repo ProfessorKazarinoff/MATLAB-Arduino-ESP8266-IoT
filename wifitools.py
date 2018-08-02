@@ -46,7 +46,7 @@ def flaskiot_post(API_key,mac_address,field, data):
         data = str(data)
     if not isinstance(field, str):
         field = str(field)
-    # https://freetemp.org/update/API_key=A7LZ3IEY/mac=5c:cf:7f:3b:0d:e8/field=1/data=72
+    # https://freetemp.org/update/API_key=ASCIISTR/mac=6c:rf:7f:2b:0e:g8/field=1/data=72.3
     base_url = 'https://freetemp.org/update'
     api_key_url = '/API_key=' + API_key
     mac_url = '/mac=' + mac_address
